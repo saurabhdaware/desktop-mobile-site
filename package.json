@@ -5,10 +5,10 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "dev": "npm run dev:desktop",
     "dev:desktop": "PLATFORM=desktop vite",
     "dev:mobile": "PLATFORM=mobile vite",
-    "build:desktop": "PLATFORM=desktop vite build",
-    "build:mobile": "PLATFORM=mobile vite build",
+    "build": "PLATFORM=desktop vite build && PLATFORM=mobile vite build",
     "test": "PLATFORM=desktop vitest run && PLATFORM=mobile vitest run"
   },
   "keywords": [],
