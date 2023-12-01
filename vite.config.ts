@@ -9,11 +9,14 @@ export default defineConfig({
     react(),
     viteCrossPlatform({
       platform: process.env.PLATFORM!,
-      supportedPlatforms: ["web", "native"],
-      entryDir: 'src',
-      outDir: 'dist',
+      supportedPlatforms: ["desktop", "mobile"],
+      entryDir: 'src', // only used for tests
+      outDir: 'dist', // not used in library false mode
       outputTypes: false,
       isLibrary: false,
     }),
-  ]
+  ],
+  build: {
+    outDir: `dist/${process.env.PLATFORM}`
+  }
 });

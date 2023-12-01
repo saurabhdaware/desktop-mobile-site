@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "moduleSuffixes": [
-      ".web",
+      ".desktop",
       ""
     ],
     "types": [
@@ -29,6 +29,5 @@
   },
   "include": [
     "src"
-  ],
-  "extends": "expo/tsconfig.base"
+  ]
 }

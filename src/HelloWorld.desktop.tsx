@@ -1,7 +1,7 @@
 export const HelloWorld = () => {
   return (
     <div>
-      <p>Hello World from WEB!</p>
+      <p>Hello World from DESKTOP!</p>
     </div>
   )
 }

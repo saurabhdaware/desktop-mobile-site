@@ -1,31 +1,25 @@
 {
-  "name": "@cross-platform-tools/react-rn-app",
+  "name": "desktop-mobile-site",
   "private": "true",
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "./src/entryNative.tsx",
   "scripts": {
-    "dev:web": "PLATFORM=web vite",
-    "dev:native": "expo start",
-    "build:web": "PLATFORM=web vite build",
-    "build:native": "echo \"Follow https://docs.expo.dev/build/setup/\"",
-    "test": "PLATFORM=web vitest run && PLATFORM=native vitest run"
+    "dev:desktop": "PLATFORM=desktop vite",
+    "dev:mobile": "PLATFORM=mobile vite",
+    "build:desktop": "PLATFORM=desktop vite build",
+    "build:mobile": "PLATFORM=mobile vite build",
+    "test": "PLATFORM=desktop vitest run && PLATFORM=mobile vitest run"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "^7.23.4",
-    "expo": "^49.0.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "^0.72.7"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@cross-platform-tools/vite-plugin": "^0.1.1",
-    "@types/expo": "^33.0.1",
+    "@cross-platform-tools/vite-plugin": "^0.1.3",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.0",
