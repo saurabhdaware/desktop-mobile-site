@@ -19,7 +19,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@cross-platform-tools/vite-plugin": "^0.1.3",
+    "@cross-platform-tools/vite-plugin": "^0.1.4",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.0",
